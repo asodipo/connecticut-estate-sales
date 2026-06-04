@@ -1075,12 +1075,7 @@
       if (!field.value.trim()) { field.style.borderColor = '#c0392b'; valid = false; }
     });
     if (!valid) { required[0].focus(); return; }
-    form.style.display = 'none';
-    document.getElementById('notifySuccess').style.display = 'block';
-  });
-
-  // NOTE: Connect notifyForm to Formspree the same way as contactForm —
-  // create a second form at formspree.io and add action="https://formspree.io/f/YOUR_ID" to the notifyForm tag.
+   document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const form = this;
     const required = form.querySelectorAll('[required]');
@@ -1096,14 +1091,6 @@
       required[0].focus();
       return;
     }
-    /* 
-      TO CONNECT A REAL FORM BACKEND:
-      Options (all free tiers available):
-        1. Formspree.io  — change action to "https://formspree.io/f/YOUR_ID"
-        2. Netlify Forms — add netlify attribute to <form>
-        3. EmailJS       — use their JS SDK
-      For now, this shows the success message.
-    */
     form.style.display = 'none';
     document.getElementById('formSuccess').style.display = 'block';
   });
