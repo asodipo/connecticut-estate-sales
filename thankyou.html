@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thank You | Connecticut Estate Sales</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #1e3a5f;
+    --navy-mid: #254a78;
+    --gold: #e8a030;
+    --gold-light: #f5bc58;
+    --gold-pale: #fef3dc;
+    --cream: #fffdf8;
+    --text-muted: #5a5a5a;
+    --border: #e8dcc8;
+    --white: #ffffff;
+  }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: var(--cream);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 3.5rem 3rem;
+    max-width: 560px;
+    width: 100%;
+    box-shadow: 0 8px 40px rgba(30,58,95,0.08);
+  }
+
+  .check-circle {
+    width: 80px;
+    height: 80px;
+    background: var(--gold-pale);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+  }
+
+  .check-circle svg {
+    width: 40px;
+    height: 40px;
+    stroke: var(--gold);
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: var(--navy);
+    margin-bottom: 2rem;
+    display: block;
+  }
+
+  .logo span { color: var(--gold); }
+
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--navy);
+    margin-bottom: 1rem;
+  }
+
+  .message {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin-bottom: 0.75rem;
+  }
+
+  .sub-message {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 2.5rem;
+  }
+
+  .btn-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+
+  .btn-primary {
+    background: var(--navy);
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background 0.2s;
+  }
+
+  .btn-primary:hover { background: var(--navy-mid); }
+
+  .btn-outline {
+    background: var(--white);
+    color: var(--navy);
+    border: 1.5px solid var(--border);
+    padding: 0.8rem 1.5rem;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: border-color 0.2s;
+  }
+
+  .btn-outline:hover { border-color: var(--gold); }
+
+  .back-link {
+    font-size: 0.88rem;
+    color: var(--text-muted);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1px;
+  }
+
+  .back-link:hover { color: var(--navy); border-color: var(--navy); }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 2rem 0;
+  }
+
+  .hours {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <span class="logo">Connecticut <span>Estate Sales</span></span>
+
+  <div class="check-circle" aria-hidden="true">
+    <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+  </div>
+
+  <h1>Thank You!</h1>
+  <p class="message">Your consultation request has been received. A member of our team will be in touch within <strong>one business day</strong> to schedule your free consultation.</p>
+  <p class="sub-message">In the meantime, feel free to reach us directly:</p>
+
+  <div class="btn-row">
+    <a href="tel:8608344506" class="btn-primary">📞 860-834-4506</a>
+    <a href="mailto:helloctestatesales@gmail.com" class="btn-outline">✉ helloctestatesales@gmail.com</a>
+  </div>
+
+  <hr class="divider">
+  <p class="hours" style="margin-bottom:1.5rem;">We're available Mon–Sat, 8am–6pm</p>
+  <a href="index.html" class="back-link">← Back to Connecticut Estate Sales</a>
+</div>
+</body>
+</html>
